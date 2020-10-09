@@ -40,8 +40,18 @@
         </select>
       </form>
     </header>
-    <main>
-      <article id="countries" class="countries"></article>
+     <main>
+      <section class="countries" id="countries">
+        <template id="country-template">
+          <article class="country">
+            <img src="" alt="" class="country__flag" />
+            <h2 class="country__title"></h2>
+            <p class="country__population"></p>
+            <p class="country__region"></p>
+            <p class="country__capital"></p>
+          </article>
+        </template>
+      </section>
     </main>
 
     <script src="js/api.js"></script>
